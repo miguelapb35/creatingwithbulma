@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		.am{
-			background-color: yellowgreen;
+			background-color: hsl(141, 71%, 48%);
 		}
 		.bb{
-			background-color: aqua;
+			background-color: hsl(171, 100%, 41%);
 		}
 		.mar{
 			margin-bottom: 50px;
@@ -22,7 +22,6 @@
 <div class="columns mar">
 		<div class="column"></div>
 		<div class="column">
-			<h3>Creating Interfaces with</h3>
 			<h1>BULMA</h1>
 		</div>
 	<div class="column"></div>
@@ -44,7 +43,11 @@
 		<div class="column"></div>
 	<div class="column">
 		<p>
-				To wrap the columns :
+				To wrap the columns 
+				use a 
+		</p>
+		<p>
+			div class="columns":
 		</p>
 <xmp>
 <div class="columns">
@@ -72,16 +75,88 @@
 </div> 
 
 <div class="columns">
+
 		<div class="column">
 			<p>
-					<xmp><div class="button is-primary is-large"></div>
-					</xmp>
+				<xmp><button class="button">button</button>
+				</xmp>
 			</p>
-			<a class="button is-primary is-large">
-					Save changes
-				</a>
+			<button class="button">button</button>
+		</div>
+		<div class="column">
+			<p>
+				<xmp><button class="button is-large">is-large</button>
+				</xmp>
+			</p>
+			<button class="button is-large">is-large</button>
+		</div>
+		<div class="column">
+			<p>
+				<xmp><button class="button is-primary is-outlined"></button>
+				</xmp>
+			</p>
+			<button class="button is-primary is-outlined">
+				Save changes
+			</button>
+		</div>		
+		<div class="column">
+			<p>
+				<xmp><button class="button is-primary is-loading"></button>
+				</xmp>
+			</p>
+			<button class="button is-primary is-loading">
+				is-loading
+			</button>
+		</div>			
+	</div>
+
+	<section id="components">
+		<div class="columns">
+			<div class="column">
+				<h1>Components</h1>
+				<p>
+					Bulma ships with components, which are pre-styled 
+					chuncks of code that serve a certain purpose.
+					With components, you have to follow a specific
+					HTML structure.
+					Reference Bulma's documentation for more information
+					and examples of components.
+					Here is an example of a card component: 	
+				</p>
+				<xmp>
+<div class="card">
+	<header class="card-header">
+		header content
+	</header>
+	<div class="card-content">
+		<div class="card-image">
+			card-image
 		</div>
 	</div>
+	<footer class="card-footer">
+		footer content
+	</footer>
+</div>
+				</xmp>
+
+
+				<div class="card">
+					<header class="card-header">
+						header content
+					</header>
+					<div class="card-content">
+						<div class="card-image">
+							card-image
+						</div>
+					</div>
+					<footer class="card-footer">
+						footer content
+					</footer>
+				</div>
+
+			</div>
+		</div>
+	</section>
 
 	
 </body>
